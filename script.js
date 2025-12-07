@@ -15,7 +15,9 @@ const picture = [
   },
   {
     src: "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?auto=format&fit=crop&w=1351&q=80",
-    text: " City on Winter"
+    text:"City on Winter"
+
+
   },
   {
     src: "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=1350&q=80",
@@ -33,9 +35,7 @@ picture.forEach((item, index) => {
   panel.id = `panel-${index + 1}`;
   panel.style.backgroundImage = `url(${item.src})`;
 
-  panel.innerHTML = `
-        <p class="img-text">${item.text}</p>
-    `;
+  panel.innerHTML = `<p class="img-text">${item.text}</p>`;
 
   container.appendChild(panel);
 });
